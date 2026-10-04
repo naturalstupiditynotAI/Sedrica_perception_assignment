@@ -1,0 +1,7 @@
+episode,rule,first_STOP_frame,note,time_s,speed_mps,distance_m,d_stop_m,margin_m,comfortable,decision_budget_s,a_required,state_just_before,reason,first_required_s (eval only),delay_s (eval only),extra_travel_m (eval only)
+clear_green,baseline,,no STOP request in 24 frames,,,,,,,,,,,,,
+clear_green,revised,,no STOP request in 24 frames,,,,,,,,,,,,,
+late_red,baseline,11.0,,1.1,0.8,1.87,0.52,1.35,True,1.69,0.183,SLOW,red: V2X red and camera red (0.99) agree,0.9,0.2,0.16
+late_red,revised,9.0,,0.9,0.8,2.03,0.52,1.51,True,1.89,0.168,GO,fresh V2X red (age 0.0s); camera (0.43) does not contradict it,0.9,0.0,0.0
+person_crossing,baseline,11.0,,1.1,0.8,1.87,0.52,1.35,True,1.69,0.183,SLOW,"person almost certainly visible (0.99), position unknown: treat as in path",1.0,0.1,0.08
+person_crossing,revised,11.0,,1.1,0.8,1.87,0.52,1.35,True,1.69,0.183,SLOW,"person almost certainly visible (0.99), position unknown: treat as in path",1.0,0.1,0.08
